@@ -9,5 +9,10 @@ setup(
     description="Command-line utility that reveals valuable insight about allies and team-mates during a live League "
                 "of Legends match.",
     scripts=["bin/liveleague"],
-    packages=["liveleague"]
+    packages=["liveleague"],
+    install_requires=[
+        "requests",
+        "click",
+        "clint"
+    ]
 )
