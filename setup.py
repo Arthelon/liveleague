@@ -6,7 +6,7 @@ setup(
     author_email="hsing.daniel@gmail.com",
     license="MIT",
     version="0.1",
-    description="Command-line utility that reveals valuable insight about allies and team-mates during a live League "
+    description="Command-line utility that reveals valuable insight about allies and enemies during a live League "
                 "of Legends match.",
     scripts=["bin/liveleague"],
     packages=["liveleague"],
