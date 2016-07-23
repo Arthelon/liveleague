@@ -94,8 +94,6 @@ def get_map_name(map_id):
     try:
         resp = requests.get(global_api_url + "/api/lol/static-data/{:s}/v1.2/map".format(region),
                             params={"api_key": API_KEY})
-        print(resp.url)
-        print(resp.status_code)
         resp.raise_for_status()
         return resp.json()["data"][str(map_id)]["mapName"]
     except requests.HTTPError:
